@@ -9,7 +9,7 @@ pip3 install twilio
 - Telefon z dowolną aplikacją uwierzytelniającą kodami TOTP (Twilio Authy, Google Authenticator, itp.)
 
 ## 1. Rejestracja użytkownika 2FA
-Normalnie musielibyście stworzyć aplikację na <https://console.twilio.com/>, natomiast my to zrobiliśmy za was. `account_sid` i `auth_token` (potrzebne do zadań) **znajdują się na prezentacji** na [slajdzie nr 31](https://docs.google.com/presentation/d/1veMs4ek57WpcdfdjHzKInFZ556B5_r6y4p0tIUZbKX8/edit#slide=id.g2aa381b5121_0_274a). \
+Normalnie musielibyście stworzyć aplikację na <https://console.twilio.com/>, natomiast my to zrobiliśmy za was. `account_sid` i `auth_token` (potrzebne do zadań) **znajdują się na prezentacji** na slajdzie nr 31. \
 _**Proszę o nie udostępnianie tych kodów i nienadużywanie ich!**_
 
 Service ID: `VA57157dcb605f45a6c2e2ffac592c6b2e`
