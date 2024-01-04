@@ -47,9 +47,9 @@ Jeżeli wszystko było dobrze zrobione, zostanie zwrócony status `verified`.
 
 ## 3. Usuwanie factora
 
-Jeżeli znamy SID factora którego stworzyliśmy, możemy usunąć go bez problemu. Natomiast jeżeli nie znamy SID, musimy najpierw wyświetlić wszystkie factory danego użytkownika. \
+Jeżeli znamy SID factora którego stworzyliśmy, możemy usunąć go bez problemu. Natomiast załóżmy, że nie znamy SID. Musimy najpierw wyświetlić wszystkie factory danego użytkownika. \
 Znowu w tym pomoże nam [dokumentacja](https://www.twilio.com/docs/verify/api/factor?code-sample=code-read-multiple-factors&code-language=Python&code-sdk-version=8.x).
 
-Gdy już mamy SID factora, który chcemy usunąć, [możemy to łatwo zrobić](https://www.twilio.com/docs/verify/api/factor?code-sample=code-delete-a-factor&code-language=Python&code-sdk-version=8.x).
+Gdy już mamy SID factora (powinien być ten sam co z pierwszego zadania), który chcemy usunąć, [możemy to łatwo zrobić](https://www.twilio.com/docs/verify/api/factor?code-sample=code-delete-a-factor&code-language=Python&code-sdk-version=8.x).
 
 Aby zweryfikować, że factor został pomyślnie usunięty, możesz sprawdzić czy lista factorów tego użytkownika jest pusta.
