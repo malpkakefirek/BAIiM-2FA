@@ -8,13 +8,13 @@ pip3 install twilio
 - <https://www.qr-code-generator.com/> - Strona do tworzenia kodów QR
 - Telefon z dowolną aplikacją uwierzytelniającą kodami TOTP (Twilio Authy, Google Authenticator, itp.)
 
-## 1. Rejestracja użytkownika 2FA
+## 1. Rejestracja factora TOTP
 Normalnie musielibyście stworzyć aplikację na <https://console.twilio.com/>, natomiast my to zrobiliśmy za was. `account_sid` i `auth_token` (potrzebne do zadań) **znajdują się na prezentacji** na slajdzie nr 31. \
 _**Proszę o nie udostępnianie tych kodów i nienadużywanie ich!**_
 
 Service ID: `VA57157dcb605f45a6c2e2ffac592c6b2e`
 
-Do tego zadania będzie przydatna [dokumentacja Twilio API do rejestracji użytkownika](https://www.twilio.com/docs/verify/quickstarts/totp#register-a-user-and-totp-seed)
+Do tego zadania będzie przydatna [dokumentacja Twilio API do tworzenia factora](https://www.twilio.com/docs/verify/quickstarts/totp#register-a-user-and-totp-seed)
 
 Przykładowy kod do tworzenia "RFC-6238 compliant seed", który będziesz używać do wszystkich zadań. \
 **ZAPISZ TEN SEED (`enitity`) i używaj go wszędzie, jako seed `entities`!!!**
@@ -30,9 +30,9 @@ entity = base64.b32encode(random_bytes).decode('utf-8')
 print(entity)
 ```
 
-Przy tworzeniu konta proszę o nazwanie użytkownika swoim Imieniem i Nazwiskiem (`friendly_name`)
+Przy tworzeniu factora proszę o nazwanie użytkownika swoim Imieniem i Nazwiskiem (`friendly_name`)
 
-Aby zweryfikować, że konto użytkownika zostało utworzone, wyświetl `new_factor.binding` oraz `new_factor.sid` w konsoli. \
+Aby zweryfikować, że konto factor został utworzony, wyświetl `new_factor.binding` oraz `new_factor.sid` w konsoli. \
 (**WAŻNE! Potrzebne do następnego zadania!**)
 
 ## 2. Przypięcie konta do aplikacji uwierzytelniającej
