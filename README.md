@@ -42,7 +42,7 @@ W tym celu skorzystamy ze strony <https://www.qr-code-generator.com/>. Po wpisan
 
 W celu weryfikacji pomyślnego przypięcia konta, napiszemy kod weryfikacyjny. Pomocna do tego będzie [dokumentacja o weryfikacji](https://www.twilio.com/docs/verify/quickstarts/totp?code-sample=code-verify-a-totp-factor&code-language=Python&code-sdk-version=8.x). W `.factors()` podajemy `sid` z poprzedniego zadania. Aby uprościć wprowadzenie kodu TOTP do naszego kodu, można skorzystać z `payload = input("Enter Code: ")`
 
-Jeżeli coś będzie nie tak, w odpowiedzi dostaniemy status `unverified`.
+Jeżeli coś będzie nie tak, w odpowiedzi dostaniemy status `unverified`. \
 Jeżeli wszystko było dobrze zrobione, zostanie zwrócony status `verified`.
 
 ## 3. Usuwanie factora
