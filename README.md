@@ -35,8 +35,8 @@ Przy tworzeniu factora proszę o nazwanie użytkownika swoim Imieniem i Nazwiski
 Aby zweryfikować, że konto factor został utworzony, wyświetl `new_factor.binding` oraz `new_factor.sid` w konsoli. \
 (**WAŻNE! Potrzebne do następnego zadania!**)
 
-## 2. Przypięcie konta do aplikacji uwierzytelniającej
-W `new_factor.binding` powinno znajdować się pole `uri`. Jest ono niezbędne do przypięcia konta do aplikacji. Można je wpisać bezpośrednio do aplikacji, natomiast prościej będzie zeskanować kod QR. 
+## 2. Przypięcie factora do aplikacji uwierzytelniającej
+W `new_factor.binding` powinno znajdować się pole `uri`. Jest ono niezbędne do przypięcia factora do aplikacji. Można je wpisać bezpośrednio do aplikacji, natomiast prościej będzie zeskanować kod QR. 
 
 W tym celu skorzystamy ze strony <https://www.qr-code-generator.com/>. Po wpisaniu `uri` na stronie, od razu możemy zeskanować kod QR aplikacją uwierzytelniającą.
 
