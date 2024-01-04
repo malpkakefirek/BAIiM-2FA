@@ -40,7 +40,7 @@ W `new_factor.binding` powinno znajdować się pole `uri`. Jest ono niezbędne d
 
 W tym celu skorzystamy ze strony <https://www.qr-code-generator.com/>. Po wpisaniu `uri` na stronie, od razu możemy zeskanować kod QR aplikacją uwierzytelniającą.
 
-W celu weryfikacji pomyślnego przypięcia konta, napiszemy kod weryfikacyjny. Pomocna do tego będzie [dokumentacja o weryfikacji](https://www.twilio.com/docs/verify/quickstarts/totp?code-sample=code-verify-a-totp-factor&code-language=Python&code-sdk-version=8.x). Aby uprościć wprowadzenie kodu TOTP do naszego kodu, można skorzystać z `payload = input("Enter Code: ")`
+W celu weryfikacji pomyślnego przypięcia konta, napiszemy kod weryfikacyjny. Pomocna do tego będzie [dokumentacja o weryfikacji](https://www.twilio.com/docs/verify/quickstarts/totp?code-sample=code-verify-a-totp-factor&code-language=Python&code-sdk-version=8.x). W `.factors()` podajemy `sid` z poprzedniego zadania. Aby uprościć wprowadzenie kodu TOTP do naszego kodu, można skorzystać z `payload = input("Enter Code: ")`
 
 Po wprowadzeniu pomyślnego kodu zostanie zwrócony status `verified`. Jeżeli kod będzie niepoprawny, w odpowiedzi dostaniemy status `unverified`.
 
