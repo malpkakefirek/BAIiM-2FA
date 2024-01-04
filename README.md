@@ -35,6 +35,11 @@ Przy tworzeniu factora proszę o nazwanie użytkownika swoim Imieniem i Nazwiski
 Aby zweryfikować, że konto factor został utworzony, wyświetl `new_factor.binding` oraz `new_factor.sid` w konsoli. \
 (**WAŻNE! Potrzebne do następnego zadania!**)
 
+### W celu weryfikacji wykonania zadania prześlij kod oraz screen konsoli, gdzie widać wartości:
+1. `enitity`
+2. `new_factor.binding`
+3. `new_factor.sid`
+
 ## 2. Przypięcie factora do aplikacji uwierzytelniającej
 W `new_factor.binding` powinno znajdować się pole `uri`. Jest ono niezbędne do przypięcia factora do aplikacji. Można je wpisać bezpośrednio do aplikacji, natomiast prościej będzie zeskanować kod QR. 
 
@@ -45,6 +50,8 @@ W celu weryfikacji pomyślnego przypięcia konta, napiszemy kod weryfikacyjny. P
 Jeżeli coś będzie nie tak, w odpowiedzi dostaniemy status `unverified`. \
 Jeżeli wszystko było dobrze zrobione, zostanie zwrócony status `verified`.
 
+### W celu weryfikacji wykonania zadania prześlij kod oraz screen w którym widać odpowiedź `verified`
+
 ## 3. Usuwanie factora
 
 Jeżeli znamy SID factora którego stworzyliśmy, możemy usunąć go bez problemu. Natomiast załóżmy, że nie znamy SID. Musimy najpierw wyświetlić wszystkie factory danego użytkownika. \
@@ -53,3 +60,7 @@ Znowu w tym pomoże nam [dokumentacja](https://www.twilio.com/docs/verify/api/fa
 Gdy już mamy SID factora (powinien być ten sam co z pierwszego zadania), który chcemy usunąć, [możemy to łatwo zrobić](https://www.twilio.com/docs/verify/api/factor?code-sample=code-delete-a-factor&code-language=Python&code-sdk-version=8.x).
 
 Aby zweryfikować, że factor został pomyślnie usunięty, możesz sprawdzić czy lista factorów tego użytkownika jest pusta.
+
+### W celu weryfikacji wykonania zadania prześlij kod oraz screen konsoli, gdzie widać:
+1. Wartość `record.sid`, która ma się zgadzać z `factor.sid` z zadania 1.
+2. Listę factorów użytkownika, która będzie pusta (po usunięciu factora)
